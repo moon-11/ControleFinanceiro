@@ -6,6 +6,6 @@ export const Container = styled.div`
   margin: 0 auto;
   display: flex;
   gap: 20%;
-  margin-top: 150px;
+  margin-top: -10px;
   justify-content: space-around;
 `;

@@ -1,12 +1,21 @@
 import * as S from "./styles";
 
-export const ResumeItem = () => {
+export default function ResumeItem({
+  title,
+  Icon,
+  value,
+}: {
+  title: string;
+  Icon: any;
+  value: any;
+}) {
   return (
     <S.Container>
       <S.header>
-        <S.HeaderTitle>Teste</S.HeaderTitle>
+        <S.HeaderTitle>{title}</S.HeaderTitle>
+        <Icon />
       </S.header>
-      <S.Total>1000</S.Total>
+      <S.Total>{value}</S.Total>
     </S.Container>
   );
-};
+}
